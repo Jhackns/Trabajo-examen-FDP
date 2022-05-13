@@ -1,11 +1,11 @@
-package Examen;
+package ExamenFDP;
 
 import java.util.Scanner;
 
 /**
  * 1Ejercicio
  */
-public class EjercicioExamen {
+public class 1Ejercicio {
 
     static Scanner leerTeclado=new Scanner(System.in);
 
