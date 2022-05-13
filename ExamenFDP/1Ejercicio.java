@@ -1,21 +1,42 @@
-package Examen-FDP;
+package Examen;
 
-public class 1Ejercicio {
-    static Scanner lt=new Scanner(System.in);
-    public static void main(string[] args) {
-        int nota;
-        String mensaje;
-        System.out.println("Ingrese su nota:");
-        nota=lt.nextInt();
-        if (nota>=17) {
-            mensaje="Tu nivel es 4 porque es "+nota;
-        if (nota<17) or (nota>=14) {
-            mensaje="Tu nivel es 3 porque es "+nota;
-        if (nota<14) and (>=11) {
-            mensaje="Tu nivel es 2 porque es "+nota;
-        if (nota<11) {
-            mensaje="No puedes obtener la vacante, tu nivel es 1 porque es "-nota;    
-        }
-        
+import java.util.Scanner;
+
+/**
+ * 1Ejercicio
+ */
+public class EjercicioExamen {
+
+    static Scanner leerTeclado=new Scanner(System.in);
+
+    public static void Pregunta1() {
+            double n1, n2, n3, promedio;
+            String estado;
+            System.out.println("Ingrese Nota 1:");
+            n1=leerTeclado.nextDouble();
+            System.out.println("Ingrese Nota 2:");
+            n2=leerTeclado.nextDouble();
+            System.out.println("Ingrese Nota 3:");
+            n3=leerTeclado.nextDouble();
+            
+            if(promedio>=17 && promedio<=20) {
+                estado="Aprobo con mension excelente";
+            }else if(promedio<17 && promedio>=14){
+                estado="Aprobo con mension regular";
+            }else if(promedio<14 && promedio>=11){
+                estado="Aprobo con mension baja";
+            }else{
+                estado="Desaprobo";
+            }
+
+            System.out.println(estado);
     }
-}
+
+
+    public static void main(String[] args) {
+        Pregunta1();
+    }
+
+
+    
+    }
